@@ -1,0 +1,12 @@
+
+SELECT * FROM Students;
+
+SELECT StudentID,Name,City from Students WHERE City='Kandy';
+
+UPDATE Students SET City= 'Galle' WHERE StudentID = 4;
+
+
+SELECT Students.StudentID, Students.Name, Students.City, Courses.Name
+FROM Students
+INNER JOIN Courses
+ON Students.CourseID = Courses.CourseID;
